@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11866,7 +11866,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -12008,7 +12008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12183,7 +12183,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12220,6 +12220,16 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The prediction score is 0.3726
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/Jo/anaconda/lib/python2.7/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  &#34;This module will be removed in 0.20.&#34;, DeprecationWarning)
 </pre>
 </div>
 </div>
@@ -12273,7 +12283,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -12287,6 +12297,16 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/Jo/anaconda/lib/python2.7/site-packages/matplotlib/collections.py:590: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  if self._edgecolors == str(&#39;face&#39;):
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 <div class="prompt"></div>
@@ -13789,7 +13809,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span><span class="p">;</span> <span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
@@ -14135,7 +14155,7 @@ QmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -17653,7 +17673,7 @@ KBOO6ugoiqIoiqIoijLhqI6OoiiKoiiKoigTzv8A1/1toSvcxoYAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -17759,10 +17779,11 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">log_data</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
     <span class="c1"># TODO: Calculate Q1 (25th percentile of the data) for the given feature</span>
     <span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">],</span> <span class="mi">25</span><span class="p">)</span>
@@ -17779,10 +17800,14 @@ Once you have performed this implementation, the dataset will be stored in the v
     
     <span class="n">feature_outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="o">~</span><span class="p">((</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">)))[</span><span class="mi">0</span><span class="p">]</span>
     <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
-    <span class="n">outliers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span> <span class="o">|</span> <span class="nb">set</span><span class="p">(</span><span class="n">feature_outliers</span><span class="p">))</span>
-
-<span class="k">print</span> <span class="n">outliers</span>
-
+    <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">feature_outliers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">outliers</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span> <span class="n">outliers</span><span class="p">[</span><span class="n">o</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span> <span class="n">outliers</span><span class="p">[</span><span class="n">o</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    
+        
+<span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">outliers</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">outliers</span><span class="p">[</span><span class="n">o</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span> <span class="k">print</span> <span class="n">o</span><span class="p">,</span> <span class="n">outliers</span><span class="p">[</span><span class="n">o</span><span class="p">]</span>
+        
 <span class="n">outliers</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Remove the outliers, if any were specified</span>
@@ -17803,7 +17828,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Data points considered outliers for the feature &#39;Fresh&#39;:
+<pre> Data points considered outliers for the feature &#39;Fresh&#39;:
 </pre>
 </div>
 </div>
@@ -18523,7 +18548,11 @@ Once you have performed this implementation, the dataset will be stored in the v
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[128, 193, 264, 137, 142, 145, 154, 412, 285, 161, 420, 38, 171, 429, 175, 304, 305, 439, 184, 57, 187, 65, 66, 203, 325, 289, 75, 81, 338, 86, 343, 218, 95, 96, 353, 98, 355, 356, 357, 233, 109, 183]
+<pre>128 2
+154 3
+65 2
+66 2
+75 2
 </pre>
 </div>
 </div>
@@ -18671,6 +18700,38 @@ Once you have performed this implementation, the dataset will be stored in the v
 <pre><code>[38, 57, 65, 66, 75, 81, 86, 95, 96, 98, 109, 128, 137, 142, 145, 154, 161, 171, 175, 183, 184, 187, 193, 203, 218, 233, 264, 285, 289, 304, 305, 325, 338, 343, 353, 355, 356, 357, 412, 420, 429, 439]
 
 </code></pre>
+<ul>
+<li>There are five outliers that appeared more than once. These are:</li>
+</ul>
+<table>
+<thead><tr>
+<th>Data index</th>
+<th># Appeared</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>128</td>
+<td>2</td>
+</tr>
+<tr>
+<td>154</td>
+<td>3</td>
+</tr>
+<tr>
+<td>65</td>
+<td>2</td>
+</tr>
+<tr>
+<td>66</td>
+<td>2</td>
+</tr>
+<tr>
+<td>75</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li><p>I don't think these data points should be removed simply because they are outliers. Grantedly, there are some very interesting datapoints identified in the tables above, we should not simply drop them because these customers are different from everyone else. If one customer has very large amount of supplies, it may be of the client's best interest to know these customers.</p>
 </li>
@@ -19156,13 +19217,13 @@ VjEAAAAASUVORK5CYII=
 </li>
 <li><p><strong>Dimensions:</strong></p>
 <ul>
-<li><p>The first dimension explained 44.24% variance. Milk, Grocery, and Detergents Paper are represented by this dimension, as well as a little bit of the other three. I think this dimension respresents whether the customer provide drinks and made foods.</p>
+<li><p>The first dimension explained 44.24% variance. Milk, Grocery, and Detergents Paper are represented by this dimension, as well as a little bit of the other three. It is important to note that all the three values have a negative coefficient, suggesting that the more of Milk, Grocery, and Detegents Paper consumption, the lower the value of the first component. I think this dimension respresents whether the customer provide drinks and made foods.</p>
 </li>
-<li><p>The second dimension cumulatively explained 71.90 variance. Fresh, Frozen, and Delicatessen are represented by this dimension, as well as a little bit of milk. I think this dimension represents whether the customer has a line of selling raw foods that need to be cooked to some degree, such as fresh products, and frozen foods. Namely, this dimension represent how likely the customer is a market.</p>
+<li><p>The second dimension cumulatively explained 71.90 variance. Fresh, Frozen, and Delicatessen are represented by this dimension, as well as a little bit of milk. Again, all three have negative coefficient, suggesting the second component is negatively correlated with these three categories. think this dimension represents whether the customer has a line of selling raw foods that need to be cooked to some degree, such as fresh products, and frozen foods. Namely, this dimension represent how likely the customer is a market.</p>
 </li>
-<li><p>The third dimension cumulatively explained 83.52 variance. Fresh, Frozen, and Delicatessen are represented by this dimension, as well as a little bit of detergents paper. Similar to the second component, I think this dimension represents whether the customer has a line of selling raw foods that need to be cooked to some degree.</p>
+<li><p>The third dimension cumulatively explained 83.52 variance. Similar to the second component, Fresh, Frozen, and Delicatessen are represented by this dimension, as well as a little bit of detergents paper. However, in this case, the third component is positively correlated with frozen and delicatessen, while negatively correlated with fresh products. Thus, this third component measures how much customers spend on frozen and delicatessen, and how little the customer spent on fresh product.</p>
 </li>
-<li><p>The fourth dimension cumulatively explained 93.14 variance. Frozen and Delicatessen are represented by this dimension, as well as a little bit of fresh products and detergents paper. I think this dimension again is a little repetitive from the last one, but I think this one focuses more on how likely that a customer is a deli.</p>
+<li><p>The fourth dimension cumulatively explained 93.14 variance. Frozen and Delicatessen are represented by this dimension, as well as a little bit of fresh products and detergents paper. However, while the coefficient of the frozen is positive, the coefficient of the delicatessen is negative, suggesting that this component mainly measures how much the customer spend on the frozen food while little on the delicatessen. I think this dimension again is a little repetitive from the last one, but I think this one focuses more on how likely that a customer will buy frozen food while little on delicatessen.</p>
 </li>
 </ul>
 </li>
